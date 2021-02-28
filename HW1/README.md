@@ -1,4 +1,4 @@
-###Question 1
+### Question 1
 
 What is the name of the layout file for the main activity?
 
@@ -7,7 +7,7 @@ What is the name of the layout file for the main activity?
 [x] activity_main.xml
 [ ] build.gradle
 
-###Question 2
+### Question 2
 
 What is the name of the string resource that specifies the application's name?
 
@@ -16,7 +16,7 @@ What is the name of the string resource that specifies the application's name?
 [ ] android:name
 [ ] applicationId
 
-###Question 3
+### Question 3
 
 Which tool do you use to create a new emulator?
 
@@ -25,7 +25,7 @@ Which tool do you use to create a new emulator?
 [ ] SDK Manager
 [ ] Theme Editor
 
-###Question 4
+### Question 4
 
 Assume that your app includes this logging statement:
 
