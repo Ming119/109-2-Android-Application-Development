@@ -1,4 +1,4 @@
-package edu.ntut.HelloConstraint;
+package edu.ntut.helloconstraint;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mShowCount = (TextView) findViewById(R.id.show_count);
         mShowColor = (Button) findViewById(R.id.button_zero);
     }
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         if (mShowCount != null) {
             mShowCount.setText(Integer.toString(mCount));
             mShowColor.setBackgroundColor(Color.RED);
+
             if (mCount%2 == 0) {
                 view.setBackgroundColor(Color.MAGENTA);
             } else {

@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "edu.ntut.HelloConstraint"
+        applicationId "edu.ntut.helloconstraint"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1

@@ -1,4 +1,4 @@
-package edu.ntut.HelloConstraint;
+package edu.ntut.helloconstraint;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("edu.ntut.hellotoast", appContext.getPackageName());
+        assertEquals("edu.ntut.helloconstraint", appContext.getPackageName());
     }
 }

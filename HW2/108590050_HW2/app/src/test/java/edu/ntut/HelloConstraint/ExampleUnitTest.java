@@ -1,4 +1,4 @@
-package edu.ntut.HelloConstraint;
+package edu.ntut.helloconstraint;
 
 import org.junit.Test;
 
