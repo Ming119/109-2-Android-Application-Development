@@ -18,6 +18,8 @@ package com.example.android.scrollingtext;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ScrollView;
 
 /**
  * This app displays a scrollable TextView (a magazine article).
@@ -26,10 +28,16 @@ import android.os.Bundle;
  */
 
 public class MainActivity extends AppCompatActivity {
+    private ScrollView mainScrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mainScrollView = (ScrollView)findViewById(R.id.scroll1);
+    }
+
+    public void returnTop(View view) {
+        mainScrollView.scrollTo(0, 0);
     }
 }

@@ -28,15 +28,29 @@
         android:background="@color/colorPrimary"
         android:padding="@dimen/padding_regular"
         android:text="@string/article_title"
-        android:textAppearance=
-            "@android:style/TextAppearance.DeviceDefault.Large"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:textColor="@android:color/white"
         android:textStyle="bold" />
 
-    <ScrollView
+    <Button
+        android:id="@+id/button_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/article_heading">
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:onClick="returnTop"
+        android:text="@string/button_top" />
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/article_heading"
+        android:layout_marginTop="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,6 +73,7 @@
                 android:lineSpacingExtra="@dimen/line_spacing"
                 android:padding="@dimen/padding_regular"
                 android:text="@string/article_text" />
+
         </LinearLayout>
 
     </ScrollView>
