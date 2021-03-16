@@ -1,4 +1,4 @@
-package edu.ntut.a108590050_hw2_2;
+package edu.ntut.a108590050_hw4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 

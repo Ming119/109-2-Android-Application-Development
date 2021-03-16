@@ -15,7 +15,7 @@
   -->
 
 <resources>
-    <string name="app_name">Implicit Intents</string>
+    <string name="app_name">108590050_HW4</string>
 
     <string name="edittext_uri">http://developer.android.com</string>
     <string name="button_uri">Open Website</string>
