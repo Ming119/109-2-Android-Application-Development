@@ -177,8 +177,14 @@ public class CalculatorTest {
     }
 
     @Test
-    public void powFirstNegativeZero() {
+    public void powFirstEvenNegativeZero() {
         double resultPow = mCalculator.pow(-0d, -2d);
         assertThat(resultPow, is(equalTo(Double.POSITIVE_INFINITY)));
+    }
+
+    @Test
+    public void powFirstOddNegativeZero() {
+        double resultPow = mCalculator.pow(-0d, -3d);
+        assertThat(resultPow, is(equalTo(Double.NEGATIVE_INFINITY)));
     }
 }
