@@ -14,5 +14,7 @@
 
 ### [HW7](./HW7)
 
+### [HW8](./HW8)
+
 ## LICENSE
 [GNU General Public License v3.0](https://github.com/Ming119/109-2_Android-Application-Development/blob/master/LICENSE)
