@@ -2,6 +2,6 @@
 
 <transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
     android:duration="500">
-    <changeBounds />
+    <changeImageTransform />
     <slide android:duration="400"/>
 </transitionSet>

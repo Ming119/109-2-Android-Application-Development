@@ -16,15 +16,16 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder> {
+class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
 
     private ArrayList<Sport> mSportsData;
     private Context mContext;
 
     SportsAdapter(Context context, ArrayList<Sport> sportsData) {
         this.mSportsData = sportsData;
-        this.mContext    = context;
+        this.mContext = context;
     }
+
 
     @Override
     public SportsAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -32,9 +33,8 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull SportsAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(SportsAdapter.ViewHolder holder, int position) {
         Sport currentSport = mSportsData.get(position);
-
         holder.bindTo(currentSport);
     }
 
@@ -44,24 +44,23 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder> {
     }
 
 
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-
-        private TextView  mTitleText;
-        private TextView  mInfoText;
+        private TextView mTitleText;
+        private TextView mInfoText;
         private ImageView mSportsImage;
 
         ViewHolder(View itemView) {
             super(itemView);
 
-            mTitleText   = itemView.findViewById(R.id.title);
-            mInfoText    = itemView.findViewById(R.id.subTitle);
+            mTitleText = itemView.findViewById(R.id.title);
+            mInfoText = itemView.findViewById(R.id.subTitle);
             mSportsImage = itemView.findViewById(R.id.sportsImage);
 
             itemView.setOnClickListener(this);
         }
 
-        void bindTo(@NonNull Sport currentSport) {
+        void bindTo(@NonNull Sport currentSport){
             mTitleText.setText(currentSport.getTitle());
             mInfoText.setText(currentSport.getInfo());
 
@@ -69,15 +68,14 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder> {
         }
 
         @Override
-        public void onClick(View v) {
+        public void onClick(View view) {
             Sport currentSport = mSportsData.get(getAdapterPosition());
             Intent detailIntent = new Intent(mContext, DetailActivity.class);
-
             detailIntent.putExtra("title", currentSport.getTitle());
-            detailIntent.putExtra("details", currentSport.getDetails());
             detailIntent.putExtra("image_resource", currentSport.getImageResource());
 
-            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext, mSportsImage, "sportImageSharedTransition");
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext, mSportsImage, "mSportsImageTransition");
+
             mContext.startActivity(detailIntent, options.toBundle());
         }
     }
