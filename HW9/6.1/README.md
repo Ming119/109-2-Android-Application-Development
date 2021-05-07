@@ -9,7 +9,7 @@ Which steps do you perform to test a `View` interaction, and in what order? Choo
 Which of the following annotations enables an instrumented JUnit 4 test class? Choose one:
 - [ ] `@RunWith`
 - [ ] `@Rule`
-- [ ]` @Test`
+- [ ] `@Test`
 - [x] `@RunWith` and `@Test`
 
 ### Question 3
