@@ -32,13 +32,13 @@ import static org.hamcrest.Matchers.is;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class NightModeTest {
+public class DayNightModeTest {
 
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
 
     @Test
-    public void nightModeTest() {
+    public void dayNightModeTest() {
         openActionBarOverflowOrOptionsMenu(getInstrumentation().getTargetContext());
 
         ViewInteraction appCompatTextView = onView(
@@ -55,16 +55,15 @@ public class NightModeTest {
 
         openActionBarOverflowOrOptionsMenu(getInstrumentation().getTargetContext());
 
-        ViewInteraction textView = onView(
+        ViewInteraction imageView = onView(
                 allOf(withId(R.id.title), withText("Day Mode"),
                         childAtPosition(
                                 childAtPosition(
                                         withClassName(is("android.support.v7.view.menu.ListMenuItemView")),
-                                    0),
                                 0),
+                        0),
                         isDisplayed()));
-        textView.check(matches(withText("Day Mode")));
-
+        imageView.check(matches(withText("Day Mode")));
 
 
 
@@ -93,6 +92,10 @@ public class NightModeTest {
                         isDisplayed()));
         textView2.check(matches(withText("Night Mode")));
     }
+
+
+
+
 
     private static Matcher<View> childAtPosition(
             final Matcher<View> parentMatcher, final int position) {
