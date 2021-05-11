@@ -3,7 +3,7 @@ How do you add images to an Android Studio project? Choose one:
 - [ ] Drag each image to the layout editor.
 - [x] Copy the image files into your project's `drawable` folder.
 - [ ] Drag an `ImageButton` to the layout editor.
-- [ ] Choose *New > Image Asset* and then choose the image file.
+- [ ] Choose **New > Image Asset** and then choose the image file.
 
 Question 2
 How do you make an `ImageView` clickable like a simple `Button`? Choose one:
