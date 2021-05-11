@@ -38,7 +38,7 @@ How do you initialize an `AsyncTaskLoader` to perform steps, such as initializin
 - [x] In `onCreateLoader()` in the activity, create an instance of the `AsyncTaskLoader` subclass. In the loader's constructor, perform initialization tasks.
 - [ ] In `onCreateLoader()` in the activity, create an instance of the `AsyncTaskLoader` subclass. In the loader's `init()` method, perform initialization tasks.
 - [ ] In the `Activity`, implement `initLoader()` to initialize the loader.
-Perform initialization tasks for the loader at the start of `loadInBackgroud()` in the `Loader`.
+- [ ] Perform initialization tasks for the loader at the start of `loadInBackgroud()` in the `Loader`.
 
 
 ### Question 6
