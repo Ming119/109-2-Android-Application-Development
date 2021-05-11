@@ -11,7 +11,7 @@ Which layout group lets you align a set of `CheckBox` elements vertically? Choos
 - [ ] `ScrollView`
 
 ### Question 3
-Which of the following is the method of the `Checkable` interface to check the state of a radio button (that is, whether it has been selected or not)?
+Which of the following is the method of the [`Checkable`](https://developer.android.com/reference/android/widget/Checkable.html) interface to check the state of a radio button (that is, whether it has been selected or not)?
 - [ ] `getId()`
 - [x] `isChecked()`
 - [ ] `onRadioButtonClicked()`
