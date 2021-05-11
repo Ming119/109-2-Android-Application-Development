@@ -13,7 +13,7 @@ Which support library does the `FloatingActionButton` belong to? Choose one:
 - [ ] `Custom Button Support Library`
 
 ### Question 3
-In the Material Design color palette, which shade of a color should you use as the primary color for your brand in your app? Choose one:
+In the [Material Design color palette](https://material.io/design/style/color.html#color-color-palette), which shade of a color should you use as the primary color for your brand in your app? Choose one:
 - [ ] Any color shade that starts with `A`.
 - [ ] Any color shade labeled `200`.
 - [x] Any color shade labeled `500`.
