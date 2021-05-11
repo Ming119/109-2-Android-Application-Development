@@ -1,10 +1,10 @@
 ### Question 1
 What changes are made when you add a second `Activity` to your app by choosing **File > New > Activity** and an `Activity` template? Choose one:
 
-- [ ] The second Activity is added as a Java class. You still need to add the XML layout file.
-- [ ] The second Activity XML layout file is created and a Java class added. You still need to define the class signature.
-- [x] The second Activity is added as a Java class, the XML layout file is created, and the AndroidManifest.xml file is changed to declare a second Activity.
-- [ ] The second Activity XML layout file is created, and the AndroidManifest.xml file is changed to declare a second Activity.
+- [ ] The second `Activity` is added as a Java class. You still need to add the XML layout file.
+- [ ] The second `Activity` XML layout file is created and a Java class added. You still need to define the class signature.
+- [x] The second `Activity` is added as a Java class, the XML layout file is created, and the `AndroidManifest.xml` file is changed to declare a second `Activity`.
+- [ ] The second `Activity` XML layout file is created, and the `AndroidManifest.xml` file is changed to declare a second `Activity`.
 
 ### Question 2
 What happens if you remove the `android:parentActivityName` and the `<meta-data>` elements from the second `Activity` declaration in the `AndroidManifest.xml` file? Choose one:
