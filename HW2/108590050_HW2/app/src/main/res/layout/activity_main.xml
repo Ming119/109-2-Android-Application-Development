@@ -18,7 +18,7 @@
         android:layout_marginBottom="8dp"
         android:onClick="showToast"
         android:text="@string/button_label_toast"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button_zero"
         app:layout_constraintEnd_toStartOf="@+id/show_count"
         app:layout_constraintStart_toStartOf="parent"

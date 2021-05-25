@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.LinkedList;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecipeViewHolder> {
-    public final static String EXTRA_NAME = "com.example.android.recyclerview.EXTRA.NAME";
+    public final static String EXTRA_NAME = ".EXTRA.NAME";
 
     private final LinkedList<String> RecipeTitles;
     private final LinkedList<String> RecipeDescriptions;
